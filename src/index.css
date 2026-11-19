@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  body {
+    background-color: #faf8f5;
+    color: #1a1918;
+    overflow-x: hidden;
+  }
+
+  /* Custom luxury scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f5f1eb;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #c5a880;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #948375;
+  }
+}
+
+/* Luxury gold text gradient */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #e6c89f 0%, #c5a880 50%, #9e7f54 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-metallic {
+  background: linear-gradient(120deg, #dfc7a5 0%, #c5a880 30%, #e6cead 60%, #a88a62 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle image overlay mask for magazine feel */
+.editorial-shadow {
+  box-shadow: 0 20px 40px -15px rgba(42, 36, 33, 0.08), 0 0 1px 1px rgba(197, 168, 128, 0.15);
+}
+
+.editorial-shadow-lg {
+  box-shadow: 0 30px 60px -20px rgba(42, 36, 33, 0.15), 0 0 1px 1px rgba(197, 168, 128, 0.2);
+}
+
+/* Subtle noise or grain texture feel */
+.bg-grain {
+  background-image: radial-gradient(rgba(197, 168, 128, 0.06) 1px, transparent 0);
+  background-size: 24px 24px;
+}
